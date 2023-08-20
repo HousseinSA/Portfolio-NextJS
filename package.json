@@ -1,0 +1,32 @@
+{
+  "name": "personal Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "framer-motion": "^10.15.0",
+    "i18next": "^23.4.1",
+    "next": "^13.4.7",
+    "next-i18next": "^14.0.0",
+    "postcss": "^8.4.24",
+    "react": "^18.2.0",
+    "react-bootstrap-icons": "^1.10.3",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.0.3",
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "next-translate-plugin": "^2.5.3"
+  }
+}
