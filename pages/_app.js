@@ -7,6 +7,7 @@ function MyApp({Component, pageProps}) {
     <Layout>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/hs-website-icon.svg" />
       </Head>
       <Component {...pageProps} />
     </Layout>
