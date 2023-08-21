@@ -6,7 +6,7 @@ module.exports = {
     link: [
       {
         rel: "icon",
-        href: "/public/hs-website-icon.svg", // Path to your favicon image
+        href: "./public/hs-website-icon.svg", // Path to your favicon image
         type: "image/png", // Specify the type of the image
       },
     ],
