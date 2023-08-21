@@ -4,8 +4,7 @@ import {useEffect, useState} from "react"
 import Image from "next/image"
 import {useRouter} from "next/router"
 import {useTranslation} from "react-i18next"
-import ChangeLanguage from "./changeLanguage"
-// import {serverSideTranslations} from "next-i18next/serverSideTranslations"
+import ChangeLanguage from "./ChangeLanguage"
 export const Header = () => {
   const {t: translate} = useTranslation("mobileNav")
   const [open, setOpen] = useState(false)
@@ -93,14 +92,3 @@ export const Header = () => {
     </>
   )
 }
-// export async function getStaticProps({locale}) {
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(locale, [
-//         "index",
-//         "about",
-//         "mobileNav",
-//       ])),
-//     },
-//   }
-// }

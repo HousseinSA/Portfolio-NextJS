@@ -1,4 +1,4 @@
-import {HeaderAnimate} from "../Components"
+import { HeaderAnimate } from "./Components"
 import {Animate} from "../Animate/Animate"
 export const NotFound = () => {
   return (
@@ -11,7 +11,7 @@ export const NotFound = () => {
             </HeaderAnimate>
             <div className="max-w-md my-2">
               <p>
-                Page not found.sorry the page your looking for does not exits.
+                Page Not found, Sorry the page your looking for does not exits.
               </p>
             </div>
           </div>
