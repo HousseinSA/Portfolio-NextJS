@@ -1,6 +1,6 @@
 import Link from "next/link"
 import {Github, Linkedin, House} from "react-bootstrap-icons"
-export const SideNav = ({path}) => {
+export default function SideNav({path}) {
   return (
     <div
       className={`absolute invisible md:visible ${

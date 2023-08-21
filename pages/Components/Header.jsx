@@ -5,7 +5,8 @@ import Image from "next/image"
 import {useRouter} from "next/router"
 import {useTranslation} from "react-i18next"
 import ChangeLanguage from "./ChangeLanguage"
-export const Header = () => {
+
+function Header() {
   const {t: translate} = useTranslation("mobileNav")
   const [open, setOpen] = useState(false)
   const {pathname} = useRouter()
@@ -92,3 +93,5 @@ export const Header = () => {
     </>
   )
 }
+
+export default Header

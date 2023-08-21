@@ -1,4 +1,8 @@
-import {Header, Footer, OpeningAnimation, SideNav} from "./Components"
+
+import OpeningAnimation from "./Components/OpeningAnimation"
+import SideNav from "./Components/SideNav"
+import Header from "./Components/Header"
+import Footer from "./Components/Footer"
 import Home from "./home"
 import {motion} from "framer-motion"
 import Head from "next/head"

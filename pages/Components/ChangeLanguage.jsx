@@ -1,7 +1,7 @@
 import {useState} from "react"
 import {Translate} from "../../helpers/Translate"
 
-const ChangeLanguage = () => {
+export default function ChangeLanguage () {
   const {locale, locales, handleTranslate} = Translate()
   const [lang, setLang] = useState("en")
   function handelLanguage() {
@@ -27,5 +27,3 @@ const ChangeLanguage = () => {
     </div>
   )
 }
-
-export default ChangeLanguage

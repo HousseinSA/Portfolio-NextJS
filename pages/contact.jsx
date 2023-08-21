@@ -1,10 +1,10 @@
 import Link from "next/link"
 import {Animate} from "../Animate/Animate"
 import Head from "next/head"
-import {HeaderAnimate} from "./Components/HeaderAnimate"
+import HeaderAnimate from "./Components/HeaderAnimate"
 import {useRouter} from "next/router"
-import {SideNav} from "./Components"
-import {Header} from "./Components"
+import SideNav from "./Components/SideNav"
+import Header from "./Components/Header"
 import {useTranslation} from "next-i18next"
 import {windowSize} from "../helpers/windowSize"
 export default function Contact() {

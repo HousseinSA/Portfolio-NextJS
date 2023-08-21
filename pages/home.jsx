@@ -1,7 +1,7 @@
 import {Animate} from "../Animate/Animate"
 import {hi, homeLogo} from "../Animate/HomeAnimate"
 import {Twitter, Github, Linkedin, Instagram} from "react-bootstrap-icons"
-import {Nav} from "./Components/Nav"
+import Nav from "./Components/Nav"
 import {motion} from "framer-motion"
 import Logo from "../assets/hs-low-resolution-logo-color-on-transparent-background.png"
 import Link from "next/link"

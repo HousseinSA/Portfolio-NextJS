@@ -4,12 +4,13 @@ import {
   containerIcon,
   iconsAnimation,
 } from "../Animate/aboutAnimate"
-import {HeaderAnimate} from "./Components/HeaderAnimate"
+import HeaderAnimate from "./Components/HeaderAnimate"
 import {motion} from "framer-motion"
 import Image from "next/image"
 import Head from "next/head"
 import userImage from "../assets/IMG_20230225_231859.jpg"
-import {Header, SideNav} from "./Components"
+import SideNav from "./Components/SideNav"
+import Header from "./Components/Header"
 import {windowSize} from "../helpers/windowSize"
 import {serverSideTranslations} from "next-i18next/serverSideTranslations"
 import {useTranslation} from "react-i18next"

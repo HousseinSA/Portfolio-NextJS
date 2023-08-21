@@ -1,5 +1,5 @@
 import {motion} from "framer-motion"
-export const ImageAnimate = ({children}) => {
+export default function ImageAnimate({children}) {
   const imageAnimation = {
     hidden: {scale: 0, rotate: 0},
     show: {

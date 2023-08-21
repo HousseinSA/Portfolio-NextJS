@@ -3,7 +3,7 @@ import img from "../../assets/hs-low-resolution-logo-color-on-transparent-backgr
 import {motion} from "framer-motion"
 import Image from "next/image"
 
-export const OpeningAnimation = () => {
+export default function OpeningAnimation  ()  {
   const [onAnimationEnds, setOneAnimationEnds] = useState(false)
   const animation = {
     hidden: {scaleY: 1},

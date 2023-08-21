@@ -1,6 +1,6 @@
-import { HeaderAnimate } from "./Components"
+import HeaderAnimate from "./Components/HeaderAnimate"
 import {Animate} from "../Animate/Animate"
-export const NotFound = () => {
+function NotFound() {
   return (
     <Animate>
       <main>
@@ -20,3 +20,4 @@ export const NotFound = () => {
     </Animate>
   )
 }
+export default NotFound

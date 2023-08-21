@@ -1,7 +1,7 @@
 import Link from "next/link"
 import {motion} from "framer-motion"
 import {useTranslation} from "react-i18next"
-export const Nav = () => {
+export default function Nav () {
   const {t: translate} = useTranslation("mobileNav")
   const hoverAnimate = {
     fontStyle: "italic",

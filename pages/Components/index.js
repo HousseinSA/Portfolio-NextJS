@@ -1,7 +1,0 @@
-export {Header} from "./Header"
-export {Footer} from "./Footer"
-export {OpeningAnimation} from "./OpeningAnimation"
-export {Nav} from "./Nav"
-export {SideNav} from "./SideNav.jsx"
-export {HeaderAnimate} from "./HeaderAnimate"
-export {ImageAnimate} from "./ImageAnimate"
