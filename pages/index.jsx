@@ -1,4 +1,3 @@
-
 import OpeningAnimation from "./Components/OpeningAnimation"
 import SideNav from "./Components/SideNav"
 import Header from "./Components/Header"
@@ -9,6 +8,7 @@ import Head from "next/head"
 import {animation} from "../Animate/HomeAnimate"
 
 export default function App() {
+  const {locales} = useRouter()
   return (
     <div className="APP">
       <Head>
@@ -30,6 +30,7 @@ export default function App() {
 }
 
 import {serverSideTranslations} from "next-i18next/serverSideTranslations"
+import {useRouter} from "next/router"
 export async function getStaticProps({locale}) {
   return {
     props: {...(await serverSideTranslations(locale, ["index", "mobileNav"]))},

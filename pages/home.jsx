@@ -17,7 +17,7 @@ export default function Home() {
         <div className="flex justify-center items-center gap-2 min-h-H75 md:justify-around ">
           <div className=" lg:place-self-end">
             <div className="main-info">
-              {locale === "ar" ? (
+              {locale === "AR" ? (
                 <h1 className="text-5xl lg:text-6xl">
                   {translate("name")}
                   <motion.span
@@ -36,9 +36,11 @@ export default function Home() {
                     animate="show"
                     initial="hidden"
                     className="inline-block text-mainColor">
-                    Hi
+                    {translate("hi")}
                   </motion.span>
-                  , My name is<br></br>Hussein
+                  , {translate("name")}
+                  <br></br>
+                  {translate("Myname")}
                 </h1>
               )}
               {locale === "ar" ? (
@@ -75,9 +77,7 @@ export default function Home() {
               </div>
               <Link
                 target="_blank"
-                href={
-                  "https://drive.google.com/file/d/1sJfKDa2iqnb-RhQ65koey4w2sb9HbFYj/view"
-                }>
+                href={"https://drive.google.com/drive/my-drive"}>
                 <div className="bg-mainColor cursor-pointer px-4 py-3 hover:bg-hoverColor h-fit text-white  rounded">
                   {translate("resume")}
                 </div>

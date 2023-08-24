@@ -16,7 +16,9 @@ import {serverSideTranslations} from "next-i18next/serverSideTranslations"
 import {useTranslation} from "react-i18next"
 import {Translate} from "../helpers/Translate"
 import {useEffect, useState} from "react"
+
 export default function About() {
+  
   const {t: translate} = useTranslation("about", "mobileNav")
   const width = windowSize()
   const [client, setClient] = useState(false)

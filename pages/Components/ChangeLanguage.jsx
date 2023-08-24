@@ -1,29 +1,30 @@
 import {useState} from "react"
 import {Translate} from "../../helpers/Translate"
+import {loadLanguages} from "i18next"
 
-export default function ChangeLanguage () {
+export default function ChangeLanguage() {
   const {locale, locales, handleTranslate} = Translate()
-  const [lang, setLang] = useState("en")
-  function handelLanguage() {
-    const language = locales.find((l) => l !== lang)
-    setLang(language)
+  function handelLanguage(language) {
     handleTranslate(language)
   }
-
   return (
     <div>
-      <button
-        onClick={handelLanguage}
-        className="rounded-full w-40 h-40 flex justify-center items-center bg-mainColor mx-2 p-1.5 text-white"
-        style={{
-          width: "40px",
-          height: "40px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}>
-        {locale}
-      </button>
+      <select
+        value={locale}
+        onChange={(e) => handelLanguage(e.target.value)}
+        className=" p-1 bg-bodyColor rounded-lg border border-gray-300 focus:outline-none focus:border-mainColor">
+        {locales.map((lang) => {
+          return (
+            <option
+              value={lang}
+              key={lang}
+              onClick={() => handelLanguage(lang)}
+              className="rounded-full p-2 w-40 h-40 flex justify-center items-center bg-mainColor text-white">
+              {lang}
+            </option>
+          )
+        })}
+      </select>
     </div>
   )
 }
