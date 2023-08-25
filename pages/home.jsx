@@ -17,7 +17,7 @@ export default function Home() {
         <div className="flex justify-center items-center gap-2 min-h-H75 md:justify-around ">
           <div className=" lg:place-self-end">
             <div className="main-info">
-              {locale === "AR" ? (
+              {locale === "ar" ? (
                 <h1 className="text-5xl lg:text-6xl">
                   {translate("name")}
                   <motion.span
