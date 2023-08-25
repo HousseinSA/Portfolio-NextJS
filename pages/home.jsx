@@ -75,13 +75,27 @@ export default function Home() {
                   <Instagram size={20} className=" cursor-pointer " />
                 </Link>
               </div>
-              <Link
-                target="_blank"
-                href={"https://drive.google.com/drive/my-drive"}>
-                <div className="bg-mainColor cursor-pointer px-4 py-3 hover:bg-hoverColor h-fit text-white  rounded">
-                  {translate("resume")}
-                </div>
-              </Link>
+              {locale === "fr" ? (
+                <Link
+                  target="_blank"
+                  href={
+                    "https://drive.google.com/file/d/1YfADIJ8rD7XH2Xidm5JPQxNz7A4Z2rR1/view?usp=sharing"
+                  }>
+                  <div className="bg-mainColor cursor-pointer px-4 py-3 hover:bg-hoverColor h-fit text-white  rounded">
+                    {translate("resume")}
+                  </div>
+                </Link>
+              ) : (
+                <Link
+                  target="_blank"
+                  href={
+                    "https://drive.google.com/file/d/1J6PxOrxvE_Q04kXgePFuOb1hY3sE2klm/view?usp=sharing"
+                  }>
+                  <div className="bg-mainColor cursor-pointer px-4 py-3 hover:bg-hoverColor h-fit text-white  rounded">
+                    {translate("resume")}
+                  </div>
+                </Link>
+              )}
             </div>
           </div>
           <motion.div
