@@ -14,6 +14,7 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script async id="slcLiveChat" src="https://widget.sonetel.com/SonetelWidget.min.js" data-account-id="208419946"></script>
         </body>
       </Html>
     )
